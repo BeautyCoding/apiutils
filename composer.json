@@ -1,0 +1,13 @@
+{
+    "name": "beautycoding/apiutils",
+    "type": "utils",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AntyRace",
+            "email": "antyrace@antyrace.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
