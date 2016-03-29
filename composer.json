@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "BeautyCoding\\ModelUtils\\": "src"
+            "BeautyCoding\\ApiUtils\\": "src"
         }
     },
     "minimum-stability": "dev",
