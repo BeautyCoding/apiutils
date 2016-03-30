@@ -3,6 +3,7 @@
 namespace BeautyCoding\ApiUtils\Providers;
 
 use BeautyCoding\ApiUtils\Responses\ResponseBuilder;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class ApiUtilsServiceProvider extends ServiceProvider
@@ -36,5 +37,12 @@ class ApiUtilsServiceProvider extends ServiceProvider
             $apiTypeClass = config('apiutils.responseType');
             return new ResponseBuilder(new $apiTypeClass());
         });
+
+        if (!array_has(config('app.aliases'), 'ApiResponse')) {
+            $loader = AliasLoader::getInstance();
+
+            // Not need it to make manually aliases in config\app.php
+            $loader->alias('ApiResponse', \BeautyCoding\ApiUtils\Facades\ApiResponse::class);
+        }
     }
 }
