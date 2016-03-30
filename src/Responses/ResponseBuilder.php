@@ -25,7 +25,14 @@ class ResponseBuilder
 
     public function __construct(ResponseType $responseType)
     {
+        $this->setResponseType($responseType);
+    }
+
+    public function setResponseType(ResponseType $responseType)
+    {
         $this->responseType = $responseType;
+
+        return $this;
     }
 
     /**
