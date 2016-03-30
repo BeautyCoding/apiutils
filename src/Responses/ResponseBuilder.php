@@ -28,6 +28,10 @@ class ResponseBuilder
         $this->setResponseType($responseType);
     }
 
+    /**
+     * Setting response type
+     * @param BeautyCoding\ApiUtils\Contracts\ResponseType $responseType
+     */
     public function setResponseType(ResponseType $responseType)
     {
         $this->responseType = $responseType;
