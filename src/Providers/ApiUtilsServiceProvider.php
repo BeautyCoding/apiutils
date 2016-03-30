@@ -17,6 +17,12 @@ class ApiUtilsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../config/apiutils.php' => config_path('apiutils.php'),
         ]);
+
+        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang/', 'apiutils');
+
+        $this->publishes([
+            __DIR__ . '/../../resources/lang/' => resource_path('lang/vendor/apiutils'),
+        ]);
     }
 
     /**
