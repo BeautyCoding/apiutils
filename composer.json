@@ -2,9 +2,6 @@
     "name": "beautycoding/apiutils",
     "type": "utils",
     "license": "MIT",
-    "requite": {
-        "barryvdh/laravel-cors": "^0.7.2"
-    },
     "authors": [
         {
             "name": "AntyRace",
@@ -18,5 +15,7 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {}
+    "require": {
+        "barryvdh/laravel-cors": "^0.8.0"
+    }
 }
